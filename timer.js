@@ -5,6 +5,8 @@ class timer {
         let time = 59;
         let a = setInterval(function () {
             if (time > 0) {
+                if (count.style.color =='white'){
+                count.style.color = 'red';} else if (count.style.color =='red'){count.style.color ='green'} else {count.style.color = 'white'}
                 count.innerHTML = time;
                 time = time - 1;
             } else {
