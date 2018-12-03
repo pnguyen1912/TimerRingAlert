@@ -26,12 +26,11 @@ class timer {
             } else {
                 let sound1 = document.getElementById('sound');
                 sound1.play();
-                alert('Happy New Year')
+                alert('Happy New Year');
+                clearInterval(a);
             }
         }, 1000);
-        setTimeout(function () {
-            clearInterval(a);
-        }, 60500);
+    
     }
 }
 
